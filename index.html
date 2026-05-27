@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Course Reservation System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>Online Course Reservation System</h1>
+
+        <form id="courseForm">
+            <input type="text" id="name" placeholder="Student Name" required>
+
+            <input type="email" id="email" placeholder="Email Address" required>
+
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option value="Python Programming">Python Programming</option>
+                <option value="Full Stack Development">Full Stack Development</option>
+                <option value="Data Science">Data Science</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+            </select>
+
+            <input type="date" id="date" required>
+
+            <button type="submit">Reserve Course</button>
+        </form>
+
+        <div class="reservation-list">
+            <h2>Reserved Courses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="reservationTable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
